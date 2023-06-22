@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>HoiChoi Bank</title>
+    <script src="js/login.js"></script>
+</head>
+
+<body class="font-sans">
+    <header>
+        <h1 class="text-6xl text-gray-600 text-center mt-10">Welcome to my <Span
+                class="font-semibold text-green-400">Digital Wallet</Span>
+        </h1>
+    </header>
+    <main>
+        <section class="bg-green-200 w-9/12 mx-auto mt-16 p-7">
+            <H2 class="text-3xl text-gray-700 mb-3 font-medium">Please Login</H2>
+            <div>
+                <input type="email" id="user-email" class="w-9/12 block mb-3 px-3"
+                    placeholder="please enter your Email">
+                <input type="password" id="user-password" class="w-9/12 block px-3 "
+                    placeholder="please enter password ">
+                <button id="btn-submit"
+                    class="bg-lime-400 hover:bg-lime-700 mt-4 px-4 py-3 rounded-xl text-white font-semibold">Get
+                    Started</button>
+            </div>
+
+
+        </section>
+        <script>
+            document.getElementById("btn-submit").addEventListener('click', function () {
+                <!-- console.log("submited"); -->
+                const emailId = document.getElementById("user-email");
+                const email = emailId.value;
+
+                const passId = document.getElementById("user-password");
+                const password = passId.value;
+
+
+                if (email === "admin@admin.com" && password === "admin")
+                    window.location.href = "savings.html";
+                else alert("Wrong password");
+
+            })
+        </script>
+    </main>
+</body>
+
+</html>
