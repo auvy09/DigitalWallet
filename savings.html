@@ -18,17 +18,17 @@
         <div class="grid grid-cols-3 gap-3">
             <div class="bg-green-300 rounded-xl p-3 w-9/12 mx-auto">
                 <h3 class="text-white font-medium font-mono text-2xl">Savings</h3>
-                <h3 class="text-white font-medium font-mono text-6xl"> 00 tk</h3>
+                <h3 class="text-white font-medium font-mono text-6xl"> <span id="saving-amount">00</span> tk</h3>
 
             </div>
             <div class="bg-teal-300 rounded-xl p-3 w-9/12 mx-auto">
                 <h3 class="text-white font-medium font-mono text-2xl">Withdraw</h3>
-                <h3 class="text-white font-medium font-mono text-6xl"> 00 tk</h3>
+                <h3 class="text-white font-medium font-mono text-6xl"> <span id="withdraw-amount">00</span> tk</h3>
 
             </div>
             <div class="bg-lime-300 rounded-xl p-3 w-9/12 mx-auto">
                 <h3 class="text-white font-medium font-mono text-2xl">My Wallet</h3>
-                <h3 class="text-white font-medium font-mono text-6xl"> 00 tk</h3>
+                <h3 class="text-white font-medium font-mono text-6xl"> <span id="wallet-amount">00</span> tk</h3>
 
             </div>
         </div>
@@ -41,7 +41,7 @@
                 <h3 class="text-white font-medium font-mono text-4xl mb-7"> Add Savings</h3>
 
                 <div>
-                    <input type="email" id="deposit-input" class="w-9/12 block mb-3 px-3"
+                    <input type="text" id="deposit-input" class="w-9/12 block mb-3 px-3"
                         placeholder="please enter your amount">
                     <button id="btn-diposit"
                         class="bg-pink-400 hover:bg-pink-700 mt-4 px-4 py-3 rounded-xl text-white font-semibold">Add</button>
@@ -52,7 +52,7 @@
                 <h3 class="text-white font-medium font-mono text-4xl mb-7">Withdraw Money</h3>
 
                 <div>
-                    <input type="email" id="withdraw-input" class="w-11/12 block mb-3 px-3"
+                    <input type="text" id="withdraw-input" class="w-11/12 block mb-3 px-3"
                         placeholder="please enter your amount">
                     <button id="btn-withdraw"
                         class="bg-orange-400 hover:bg-orange-700 mt-4 px-4 py-3 rounded-xl text-white font-semibold">Withdraw</button>
@@ -66,6 +66,7 @@
 
     </section>
     <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
 </body>
 
 </html>
