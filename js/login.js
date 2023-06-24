@@ -16,5 +16,6 @@ document.getElementById("btn-submit").addEventListener('click', function () {
     if (email === "admin@admin.com" && password === "admin")
         window.location.href = "savings.html";
     else alert("Wrong password");
-
+    emailId.value = '';
+    passId.value = '';
 })

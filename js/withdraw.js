@@ -3,6 +3,10 @@ document.getElementById('btn-withdraw').addEventListener('click', function () {
     const withdrawFieldString = witdrawField.value;
     const withdrawBalanceInput = parseFloat(withdrawFieldString);
     console.log(withdrawBalanceInput);
+    if (isNaN(withdrawBalanceInput)) {
+        alert("Please enter valid number");
+        return;
+    }
 
 
     const withdrawAmount = document.getElementById("withdraw-amount");
